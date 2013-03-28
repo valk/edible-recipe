@@ -1,0 +1,7 @@
+group :development do
+  gem 'edible_recipe', :path => '../../edible_recipe'
+end
+ 
+group :production do
+  gem 'edible_recipe', :git => 'git://github.com/valk/edible_recipe.git'
+end
