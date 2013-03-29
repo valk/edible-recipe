@@ -22,6 +22,7 @@ module EdibleRecipe
     end
 
     def create
+    	binding.pry
     	@gr = GenericRecipe.new(params[:generic_recipe])
   
 		respond_to do |format|
