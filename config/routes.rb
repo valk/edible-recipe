@@ -1,4 +1,6 @@
 EdibleRecipe::Engine.routes.draw do
-  root :to => 'recipes#index'
+  root :to => 'generic_recipes#index'
+
+  resources :generic_recipes
   resources :recipes
 end

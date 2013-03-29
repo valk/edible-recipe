@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @gr.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @gr.description %>
+</p>
+
+<% for recipe in @gr.recipes %>
+  <li><%= h recipe.content %></li>
+<% end %>
+
+
+<%= link_to 'Edit', edit_generic_recipe_path(@gr) %> |
+<%= link_to 'Back', generic_recipes_path %>

@@ -3,7 +3,7 @@ class CreateEdibleRecipeGenericRecipes < ActiveRecord::Migration
     create_table :edible_recipe_generic_recipes do |t|
       t.string :title
       t.string :description
-      t.smallint :language
+      t.integer :language
 
       t.timestamps
     end
