@@ -65,6 +65,9 @@ module EdibleRecipe
     end
 
     def destroy
+    	@gr = GenericRecipe.find(params[:id])
+      	@gr.destroy
+      	redirect_to generic_recipes_path
     end
 
   end
