@@ -20,7 +20,7 @@
     <%= f.text_field :description %>
   </div>
 
-  <%= f.fields_for :recipe do |r| %>
+  <%= f.fields_for :recipes do |r| %>
     <div class="field">
       <%= r.label :recipe_title %><br />
       <%= r.text_field :title %>
