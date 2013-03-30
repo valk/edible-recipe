@@ -9,9 +9,14 @@ gemspec
 gem "jquery-rails"
 
 group :development do
-        gem 'pry'
-        gem 'pry-remote'
-        gem 'pry-stack_explorer'
-        gem 'pry-debugger'
+    gem 'pry'
+    gem 'pry-remote'
+    gem 'pry-stack_explorer'
+    gem 'pry-debugger'
 end
 
+group :test do
+	gem "capybara"
+	gem "factory_girl_rails"
+	gem "guard-rspec"
+end
