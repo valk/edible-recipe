@@ -20,3 +20,8 @@ group :test do
 	gem "factory_girl_rails"
 	gem "guard-rspec"
 end
+
+group :test, :development do
+	gem 'pry-rescue'
+	gem 'pry-stack_explorer'
+end

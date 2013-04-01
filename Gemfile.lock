@@ -71,6 +71,7 @@ GEM
       guard (>= 1.1)
     hike (1.2.1)
     i18n (0.6.1)
+    interception (0.3)
     journey (1.0.4)
     jquery-rails (2.2.1)
       railties (>= 3.0, < 5.0)
@@ -101,6 +102,9 @@ GEM
     pry-remote (0.1.6)
       pry (~> 0.9)
       slop (~> 3.0)
+    pry-rescue (1.1.0)
+      interception (>= 0.3)
+      pry
     pry-stack_explorer (0.4.8)
       binding_of_caller (~> 0.6.8)
       pry (~> 0.9.11)
@@ -181,6 +185,7 @@ DEPENDENCIES
   pry
   pry-debugger
   pry-remote
+  pry-rescue
   pry-stack_explorer
   rspec-rails
   sqlite3
